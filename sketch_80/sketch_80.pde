@@ -1,3 +1,6 @@
+//Left click to create a tree
+//Right click to delete last tree
+
 ArrayList<Tree> tree = new ArrayList();
 
 int numFrames = 480;
