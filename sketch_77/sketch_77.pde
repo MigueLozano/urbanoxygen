@@ -1,15 +1,13 @@
 int m = 100;
 Particle[] thing = new Particle[m];
 
-int h = 400;
-
 int numFrames = 360;
 float t;
 void setup() {
   size(900, 900);
   
   for(int i=0;i<m;i++) {
-    thing[i] = new Particle(i%2 >= 0);
+    thing[i] = new Particle();
   }
 }
 
@@ -39,14 +37,12 @@ class Particle {
   float per;
   float offset;
   float cOff;
-  boolean up;
   float radius;
   
   color c1 = color(#03BEFF);
   color c2 = color(#FF033E);
   
-  Particle(boolean up) {
-    this.up = up;
+  Particle() {
     amp = random(-50, 400);
     per = random(1, 2);
     offset = random(0, 1);
