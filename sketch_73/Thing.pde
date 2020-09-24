@@ -1,6 +1,5 @@
 class Thing {
   float radius;
-  float seed = random(0, 5000000);
   int period = (int)random(6, 9);
   float offset = random(PI/1);
   float amp = random(0.07, 0.4);
