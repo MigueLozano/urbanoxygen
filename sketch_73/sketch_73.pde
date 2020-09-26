@@ -17,7 +17,7 @@ void setup() {
   }
 }
 
-void draw_() {
+void draw() {
   t = ((float)frameCount/numFrames)%1;
   background(0);
   translate(width/2, height/2);
